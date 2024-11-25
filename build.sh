@@ -3,4 +3,4 @@
 Imagename="test"
 tag="latest"
 
-docker build -t $Imagename:$tag 
+docker build -t $Imagename:$tag .

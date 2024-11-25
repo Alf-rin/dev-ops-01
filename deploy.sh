@@ -9,7 +9,7 @@ if [[ $GIT_BRANCH == "origin/dev" ]]; then
         docker tag test ar8888/dev
         docker push vennilavan/dev
 
-if [[ $GIT_BRANCH == "origin/master" ]]; then
+elif [[ $GIT_BRANCH == "origin/master" ]]; then
         sh'chmod +x build.sh'
         sh'./build.sh'
 
@@ -18,4 +18,4 @@ if [[ $GIT_BRANCH == "origin/master" ]]; then
 
 else
         echo "failed"
-fi
+fi 

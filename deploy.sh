@@ -1,20 +1,20 @@
 #!/bin/bash
 docker-compose up -d
-docker login -u ar8888  -p dckr_pat_NqD6cUw-P2zyV9GQ715-Y8hLK_I
+docker login -u alfrin18  -p dckr_pat_yFSMGRPNS83iK_Cn1LvEeAe-LRs
 
 if [[ $GIT_BRANCH == "origin/dev" ]]; then
        sh 'chmod +x build.sh'
        sh './build.sh'
 
-        docker tag test ar8888/dev
-        docker push vennilavan/dev
+        docker tag test alfrin18/dev
+        docker push alfrin18/dev
 
 elif [[ $GIT_BRANCH == "origin/master" ]]; then
         sh 'chmod +x build.sh'
         sh './build.sh'
 
-        docker tag test ar8888/prod
-        docker push vennilavan/prod
+        docker tag test alfrin18/prod
+        docker push alfrin18/prod
 
 else
         echo "failed"

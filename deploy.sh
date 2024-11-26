@@ -1,5 +1,4 @@
 #!/bin/bash
-docker-compose up -d
 docker login -u alfrin18  -p dckr_pat_yFSMGRPNS83iK_Cn1LvEeAe-LRs
 
 if [[ $GIT_BRANCH == "origin/dev" ]]; then

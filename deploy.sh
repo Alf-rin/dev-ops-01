@@ -1,5 +1,5 @@
 #!/bin/bash
-docker login -u alfrin18  -p dckr_pat_yFSMGRPNS83iK_Cn1LvEeAe-LRs
+docker login -u alfrin18  -p dckr_pat_1dpAYO5amUlhcRCLWZZRDmdFHrk
 
 if [[ $GIT_BRANCH == "origin/dev" ]]; then
        sh 'chmod +x build.sh'
